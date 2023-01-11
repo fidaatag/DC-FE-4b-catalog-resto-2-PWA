@@ -127,9 +127,17 @@ const createRemoveFavoriteButtonTemplate = () => `
     <button class="favbutton"><span class="removefav">Remove</span> Your Favorite Resto </button>
 `;
 
+const creatNoFavortiteRestoPage = () => `
+    <div class="nofavrestopage">
+        <img src="./no-food.png" alt="No food icon">
+        <p>No food is your favorite</p>
+    </div>
+`;
+
 export {
     createItemRestoTemplate,
     createDetailRestoTemplate,
     createAddFavoriteButtonTemplate,
     createRemoveFavoriteButtonTemplate,
+    creatNoFavortiteRestoPage,
 };
