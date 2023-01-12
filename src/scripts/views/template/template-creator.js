@@ -134,10 +134,27 @@ const creatNoFavortiteRestoPage = () => `
     </div>
 `;
 
+const spinner = () => `
+    <div class="spinner-wrapper">
+        <span class="spinner-grow merah" role="status"></span>
+        <span class="spinner-grow kuning" role="status"></span>
+        <span class="spinner-grow biru" role="status"></span>
+    </div>
+`;
+
+const badconnection = () => `
+    <div class="badconnection">
+        <img src="./disconnect.png" alt="disconnect">
+        <p>Bad connection, swipe up to refresh!</p>
+    </div>
+`;
+
 export {
     createItemRestoTemplate,
     createDetailRestoTemplate,
     createAddFavoriteButtonTemplate,
     createRemoveFavoriteButtonTemplate,
     creatNoFavortiteRestoPage,
+    spinner,
+    badconnection,
 };
